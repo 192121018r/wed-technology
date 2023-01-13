@@ -1,0 +1,33 @@
+<html>
+<head>
+ <title>selecting or deselecting all checkboxes</title>
+ <script typ="text/javascript">
+ function selects(){
+   var ele=document.get elementsbyname('chk');
+   for (var i=0;i<ele.length;i++){
+     if (ele[i].type =='checkbox')
+      ele[i].checked=true;
+  }
+}
+ function deselect(){
+ var ele=document.getelementsbyname('chk');
+ for(var i=0;i<ele.length;i==){
+ if (ele[i].type=='cheackbox')
+ ele[i].checked=false;
+}
+}
+</script>
+</head>
+<body>
+  <h3>select or deselect all or some checkboxes asper your
+   moos:</h3>
+  <input type="checkbox"name="chk"value="smile">smile<br>
+  <input type="checkbox"name="chk"value="cry">cry<br>
+  <input type="checkbox"name="chk"value="laugh">laugh<br>
+  <input type="checkbox"name="chk"value="angry">angry<br>
+
+  <br>
+   <input type="button"onclic="selects()value+="select all"/>
+   <input type="button"=deselect"()'value="deselect all"/>
+  </body>
+ </html>
